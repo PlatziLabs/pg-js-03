@@ -6,12 +6,12 @@ describe('tests', () => {
     jest.clearAllMocks();
   });
 
-  it("should return 'Hello, World!' before 3s", async () => {
+  it("should return 'Hello, World!' before 2s", async () => {
     const rta = await runCode();
     expect(rta).toBe("Hello, World!");
   });
 
-  it("should return call setTimeout with 3s", async () => {
+  it("should return call setTimeout with 2s", async () => {
     const spy = jest.spyOn(global, "setTimeout");
 
     const rta = await runCode();
