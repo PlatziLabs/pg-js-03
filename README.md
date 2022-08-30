@@ -1,4 +1,4 @@
-En este desafío debes retornar el string "Hello, World!" con 2 segundos de retraso usando `window.setTimeout` y una promesa.
+En este desafío debes retornar un array de strings en el order adecuado, debes tener en cuenta que cada tarea es asincrona.
 
 La solución debería tener un input y output como los siguientes:
 
@@ -11,6 +11,5 @@ runCode();
 Output
 
 ```sh
-# after => 2s
-"Hello, World!"
+['Task 1', 'Tasks 2', 'Task 3']
 ```
