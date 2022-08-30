@@ -1,4 +1,4 @@
-import { runCode } from './challenge';
+import { runCode } from './public/challenge';
 
 (async () => {
   const rta = await runCode();
