@@ -11,6 +11,6 @@ runCode();
 Output
 
 ```sh
-# after => 3s
+# after => 2s
 "Hello, World!"
 ```
