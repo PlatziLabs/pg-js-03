@@ -1,7 +1,7 @@
 export function runCode() {
   return new Promise((resolve) => {
-    setTimeout(() => {
+    window.setTimeout(() => {
       resolve('Hello, World!');
-    }, 3000);
+    }, 2000);
   });
 }
