@@ -1,11 +1,29 @@
-import { runCode } from './solution';
+import { runCode } from "./solution";
 
 jest.useFakeTimers();
-jest.spyOn(global, 'setTimeout');
+jest.spyOn(global, "setTimeout");
 
-it("should return 'Hello world!' before 3s", async() => {
-  const rta = await runCode();
-  expect(rta).toBe("Hello Word!");
-  expect(setTimeout).toHaveBeenCalledTimes(1);
-  expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 2000);
+describe('tests', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it("should return 'Hello, World!' before 3s", async () => {
+    const promise = runCode();
+
+    jest.runAllTimers();
+    const rta = await promise;
+    expect(rta).toBe("Hello, World!");
+  });
+
+  it("should return call setTimeout with 3s", async () => {
+    const promise = runCode();
+
+    expect(setTimeout).toHaveBeenCalledTimes(1);
+    expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 3000);
+
+    jest.runAllTimers();
+    const rta = await promise;
+    expect(rta).toBe("Hello, World!");
+  });
 });
