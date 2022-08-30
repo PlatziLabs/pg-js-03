@@ -1,4 +1,4 @@
-import { runCode } from "./solution";
+import { runCode } from "./challenge";
 
 describe('tests', () => {
 
