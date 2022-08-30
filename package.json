@@ -1,5 +1,5 @@
 {
-  "name": "pg-js-01",
+  "name": "pg-js-02",
   "version": "1.0.0",
   "description": "En este desafío tienes un array de números, usando la función map debes retornar todos los números del array multiplicados por dos.",
   "source": "index.html",
@@ -10,19 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PlatziLabs/pg-js-01.git"
+    "url": "git+https://github.com/PlatziLabs/pg-js-02.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PlatziLabs/pg-js-01/issues"
+    "url": "https://github.com/PlatziLabs/pg-js-02/issues"
   },
-  "homepage": "https://github.com/PlatziLabs/pg-js-01#readme",
-  "dependencies": {
-    "jest": "^28.1.3"
-  },
+  "homepage": "https://github.com/PlatziLabs/pg-js-02#readme",
   "devDependencies": {
+    "jest": "^29.0.1",
     "parcel": "^2.7.0"
   }
 }

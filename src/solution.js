@@ -1,3 +1,7 @@
-export function runCode(arrayA, arrayB) {
-  return [...arrayA, ...arrayB];
+export function runCode() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Hello, World');
+    }, 3000);
+  });
 }

@@ -1,15 +1,11 @@
 import { runCode } from './solution';
 
-it("should return [1,2,3,4]", () => {
-  const arrayA = [1, 2];
-  const arrayB = [3, 4];
-  const rta = runCode(arrayA, arrayB);
-  expect(rta).toEqual([1, 2, 3, 4]);
-});
+jest.useFakeTimers();
+jest.spyOn(global, 'setTimeout');
 
-it("should return [1,2,3,4,5]", () => {
-  const arrayA = [1, 2];
-  const arrayB = [3, 4, 5];
-  const rta = runCode(arrayA, arrayB);
-  expect(rta).toEqual([1, 2, 3, 4, 5]);
+it("should return 'Hello world!' before 3s", async() => {
+  const rta = await runCode();
+  expect(rta).toBe("Hello Word!");
+  expect(setTimeout).toHaveBeenCalledTimes(1);
+  expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 2000);
 });
