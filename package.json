@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel",
     "build": "parcel build",
-    "test": "jest solution/challenge"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
