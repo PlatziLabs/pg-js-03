@@ -1,4 +1,4 @@
-En este desafío debes retornar un array de strings en el order adecuado, debes tener en cuenta que cada tarea es asincrona.
+En este desafío debes ejecutar el resultado 3 tareas asíncronas en orden y retornar el resultado en un array.
 
 La solución debería tener un input y output como los siguientes:
 
