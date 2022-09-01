@@ -11,5 +11,5 @@ runCode();
 Output
 
 ```sh
-['Task 1', 'Tasks 2', 'Task 3']
+["Task 1", "Tasks 2", "Task 3"]
 ```
