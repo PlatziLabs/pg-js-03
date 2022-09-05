@@ -5,11 +5,12 @@ La solución debería tener un input y output como los siguientes:
 Input
 
 ```js
-runCode();
+runCode()
+.then(response => console.log(response));
 ```
 
 Output
 
-```sh
+```bash
 ["Task 1", "Tasks 2", "Task 3"]
 ```
