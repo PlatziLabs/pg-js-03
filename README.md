@@ -11,6 +11,6 @@ runCode()
 
 Output
 
-```bash
+```js
 ["Task 1", "Tasks 2", "Task 3"]
 ```
