@@ -14,7 +14,7 @@ describe('tests', () => {
     expect(rta[2]).toBe('Task 3');
   });
 
-  it("should return call setTimeout 3 times", async () => {
+  it("should call setTimeout 3 times", async () => {
     const spy = jest.spyOn(global, "setTimeout");
     const rta = await runCode();
     expect(rta.length).toBe(3);
